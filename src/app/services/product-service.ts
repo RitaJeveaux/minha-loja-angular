@@ -15,7 +15,7 @@ export class ProductService {
         description: 'Um console de última geração para jogos.',
         price: 3500,
         launchDate: new Date('2025-10-15'),
-        avaialble: true
+        available: true,
       },
       {
         id: 2,
@@ -23,7 +23,7 @@ export class ProductService {
         description: 'Leve e poderoso para as suas tarefas.',
         price: 5200,
         launchDate: new Date('2025-10-18'),
-        avaialble: false
+        available: false,
       },
       {
         id: 3,
@@ -31,7 +31,7 @@ export class ProductService {
         description: 'Som de alta qualidade.',
         price: 450,
         launchDate: new Date('2025-10-06'),
-        avaialble: true
+        available: true,
       },
     ]
   }
