@@ -19,7 +19,7 @@ export class ProductList implements OnInit {
     this.products = this.productService.getProducts()
   }
 
-  selectProduct(product: any) {
-    this.selectProduct = product;
+  selectProduct(product: any): void {
+    this.selectedProduct = product;
   }
 }
