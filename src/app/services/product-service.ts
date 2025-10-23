@@ -16,6 +16,8 @@ export class ProductService {
         price: 3500,
         launchDate: new Date('2025-10-15'),
         available: true,
+        onSale: true,
+        discount: 0.15
       },
       {
         id: 2,
@@ -24,6 +26,8 @@ export class ProductService {
         price: 5200,
         launchDate: new Date('2025-10-18'),
         available: false,
+        onSale: false,
+        discount: 0
       },
       {
         id: 3,
@@ -32,6 +36,8 @@ export class ProductService {
         price: 450,
         launchDate: new Date('2025-10-06'),
         available: true,
+        onSale: true,
+        discount: 0.10
       },
     ]
   }
