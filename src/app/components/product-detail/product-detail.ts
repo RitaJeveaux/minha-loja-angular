@@ -1,9 +1,10 @@
 import { Component, Input, OnChanges, SimpleChanges, OnDestroy } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { AvailabilityPipe } from '../../pipes/availability-pipe';
 
 @Component({
   selector: 'app-product-detail',
-  imports: [CommonModule],
+  imports: [CommonModule, AvailabilityPipe],
   templateUrl: './product-detail.html',
   styleUrl: './product-detail.css',
 })
@@ -17,7 +18,7 @@ export class ProductDetail implements OnChanges, OnDestroy {
   }
 
   ngOnDestroy(): void {
-     console.log("Componente de detalhe destruido! Limpando...");
+    console.log("Componente de detalhe destruido! Limpando...");
   }
 
 }
