@@ -12,6 +12,7 @@ import { OnSalePipe } from '../../pipes/on-sale-pipe';
 export class ProductDetail implements OnChanges, OnDestroy {
   @Input() product: any;
   discountedPrice: number = 0;
+  isZoomed: boolean = false;
 
   ngOnChanges(changes: SimpleChanges): void {
     if (changes['product'] && this.product) {
@@ -23,7 +24,7 @@ export class ProductDetail implements OnChanges, OnDestroy {
       }
     }
   }
-  
+
   ngOnDestroy(): void {
     console.log("Componente de detalhe destruido! Limpando...");
   }
