@@ -16,17 +16,6 @@
   align-items: center;
 }
 
-.original-price {
-  text-decoration: line-through;
-  color: #999999;
-  margin-right: 10px;
-}
-
-.discounted-price {
-  color: green;
-  font-weight: bold;
-}
-
 .zoomed {
   transform: scale(1.05);
 }
